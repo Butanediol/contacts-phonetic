@@ -27,6 +27,13 @@ $ swift build -c release
 $ cp .build/release/contacts-phonetic /usr/local/bin/
 ```
 
+The original Objective-C implementation is retained as a separate executable:
+
+```Shell
+$ swift build -c release --product contacts-phonetic-objc
+$ .build/release/contacts-phonetic-objc --help
+```
+
 ## Usage
 
 ```

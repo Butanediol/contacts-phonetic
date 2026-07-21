@@ -7,8 +7,8 @@
 //
 
 #import <AddressBook/AddressBook.h>
+#import <Multitones.h>
 #import "config.h"
-#import "multitones_dict.h"
 
 @interface NSString (PhoneticAdditions)
 
@@ -111,7 +111,7 @@ int main(int argc, const char * argv[]) {
                                         [shortArguments containsString:@"i"]);
         
         // Init dict
-        NSDictionary *multitones = @MULTITONES;
+        NSDictionary *multitones = ContactsPhoneticMultitones();
         
         // Phonetic util block
         NSString* (^phoneticFromString)(NSString*) = ^NSString*(NSString *string){
