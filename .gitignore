@@ -5,6 +5,7 @@
 ## Build generated
 build/
 DerivedData
+.build/
 
 ## Various settings
 *.pbxuser
@@ -18,6 +19,7 @@ DerivedData
 xcuserdata
 
 ## Other
+.DS_Store
 *.xccheckout
 *.moved-aside
 *.xcuserstate

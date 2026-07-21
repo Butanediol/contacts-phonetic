@@ -23,7 +23,8 @@ Compile on your own:
 ```Shell
 $ git clone https://github.com/Elethom/contacts-phonetic.git
 $ cd contacts-phonetic
-$ make install
+$ swift build -c release
+$ cp .build/release/contacts-phonetic /usr/local/bin/
 ```
 
 ## Usage
